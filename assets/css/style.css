@@ -71,7 +71,7 @@ header {
     justify-content: space-between;
     padding-left: 5rem;
     padding-right: 5rem;
-    height: 5em;
+    height: 5rem;
     width: 100%;
     align-items: center;
     box-sizing: border-box;
@@ -81,10 +81,12 @@ header {
     background-color: var(--white);
     grid-area: hd;
     z-index: 4;
+    
+
 }
 h1 a img {
-    height: 2em;
-    padding: 0.5em;
+    height: 2rem;
+    padding: 0.5rem;
 }
 .navitems {
     display: flex;
@@ -92,7 +94,8 @@ h1 a img {
     align-items: center;
 }
 .navitems li {
-    padding: 0.7em;
+    padding: 0.7rem;
+    z-index: 5;
 }
 nav li a {
     color: var(--black);
@@ -124,7 +127,10 @@ input::placeholder {
     font-size: 1rem;
 }
 
-
+/* Hamburger Menu */
+.burger {
+    display: none;
+}
 
 
 
@@ -981,4 +987,63 @@ footer {
 .artist-main .heading2 {
     grid-area: img1;
     text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1040px) {
+
+    /* Burger Menu */
+    header {
+        grid-area: hd;
+        display: grid;
+        grid-template-rows: 5rem auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:    "hd hd bu"
+                                ". . mu";
+        overflow: visible;
+        position: auto;
+    }
+    .navitems {
+        display: none;
+        background-color: var(--white);
+        align-items: end;
+        overflow-y: visible;
+        text-align: right;
+    }
+    nav {
+        grid-area: mu;
+    }
+    .burger {
+        display: block;
+        color: var(--black);
+        grid-area: bu;
+        justify-self: end;
+        padding-right: 1rem;
+    }
+    .navitems input[type="search"] {
+        display: none;
+    }
+
+
+    /* Homepage Adjustments */
+    .home-main {
+        grid-template-rows: auto 40vh 40vh 0;
+    }
+    .home-main .hero {
+        height: 75vh;
+    }
+
+
 }
