@@ -362,7 +362,7 @@ footer {
 .contact-main input[type=text], 
 .contact-main input[type=email],
 .contact-main input[type=textarea],
-.contact-main input[type=submit],
+.contact-main textarea,
 .contact-main select {
     width: 30rem;
     max-width: 720px;
@@ -376,7 +376,7 @@ footer {
     /* place-self: center; */
     height: 2.5rem;
 }
-.contact-main input[type=textarea] {
+.contact-main textarea {
     height: 6rem;
 }
 .contact-main input[type=submit] {
@@ -385,6 +385,8 @@ footer {
     border: none;
     cursor: pointer;
     margin-top: 0.5rem;
+    padding: 1rem 2rem;
+    border-radius: 4px;
 }
 .contact-main input[type=submit]:hover {
     background-color: var(--light-green);
