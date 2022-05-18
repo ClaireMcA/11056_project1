@@ -4,7 +4,9 @@
         <meta  charset="utf-8" />
         <title>Canberra's Art Biennial</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+        <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+        <script src="assets/scripts/script.js"></script>
+        <script src="https://kit.fontawesome.com/1e81287bde.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" type="text/css" href="assets/css/normalise.css">
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,17 +16,21 @@
     <body>
         <div class="homewrapper">
             <header>
-                <h1><a href="index.html"><img class src = "assets/images/CAB-Logo.png" alt="Canberra's Art Biennial Logo"/></a></h1>
+                <h1><a href="index.html"></a></h1>
+                <a href="javascript:void(0);" class="burger" onclick="myFunction()">
+                    <img src="assets/images/bars-solid.svg"/>
+                </a>
                 <nav>
-                    <ul class="navitems">
+                    <ul class="navitems" id="navitems">
                         <li><a href="festival.html">The Festival</a></li>
                         <li><a href="donate.html">Donate</a></li>
                         <li><a href="about.html">About</a></li>
-                        <li><a class="active" href="news.html">News</a></li>
+                        <li><a href="news.html">News</a></li>
                         <li><input type="search" id="query" name="q" placeholder="Search..."></li>
                     </ul>
                 </nav>
             </header>
+
             <main class="artist-main">
                 
                 <div class="hero">
@@ -38,6 +44,7 @@
                     <h3>Title of the Piece</h3>
                     <img  class="image-1" src="assets/images/asch-house_brick.jpeg" alt="Localjinni's Twilight Video"/>
                 </div>
+
                 
                 <div class="section-1">
                     
@@ -49,6 +56,7 @@
                     <p>Sed gravida metus volutpat nulla condimentum, ac pellentesque orci luctus. Integer molestie justo vitae semper malesuada. Phasellus sit amet nisl lobortis urna condimentum vestibulum. Vestibulum eget egestas dui. Quisque vel aliquam turpis. Ut sit amet ornare nulla. In non rhoncus ex. Quisque quis egestas diam, pretium sodales dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis erat auctor, convallis sem sit amet, blandit ex. Nam dictum eros quis finibus ornare. Morbi luctus orci nunc, consequat elementum sapien sollicitudin et.</p>
                     <p>Cras ultrices ante non tortor laoreet, id tempus felis faucibus. Etiam mollis lorem ac mi tincidunt, et bibendum felis dapibus. Donec non faucibus mi. Nam tempus tellus ante, vel placerat metus aliquet id. Proin mi augue, interdum non lacus eget, viverra laoreet velit. In pharetra mi erat, non scelerisque mauris commodo tincidunt. Sed nec tincidunt magna.</p>
                     <p>Phasellus aliquet nunc lorem, sit amet sagittis nisi rhoncus nec. Morbi ullamcorper nunc nibh, eget tincidunt neque mollis vitae. In lectus elit, suscipit vel scelerisque at, mollis et quam. Maecenas sit amet tempor ligula. Ut dignissim sed velit hendrerit lacinia. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus fringilla semper sapien, at dictum urna viverra eu. Ut pharetra aliquet velit, in rhoncus nisl ultrices tincidunt. Quisque interdum cursus ultricies. Sed blandit tellus in malesuada aliquet. Etiam eget semper dui, ac feugiat ligula. Integer dapibus tincidunt sapien, sed tempor felis commodo maximus.</p>
+                    <a href="javascript:window.history.back();" class="back-button">&#8249; Go Back</a>
                 </div>
 
             </main>

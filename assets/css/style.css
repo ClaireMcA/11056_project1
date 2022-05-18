@@ -75,8 +75,8 @@ p a:hover, footer li a:hover {
 header {
     display: flex;
     justify-content: space-between;
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
     height: 5rem;
     width: 100%;
     align-items: center;
@@ -90,10 +90,19 @@ header {
     
 
 }
-h1 a img {
-    height: 2rem;
-    padding: 0.5rem;
+h1 a {
+    width: 17rem;
+    height: 2.5rem;
+    background-size: cover;
+    background-image: url(../images/CAB-Logo.png);
+    background-position: center;
+    display: block;
 }
+/* h1 a {
+    height: auto;
+    padding: 4rem;
+
+} */
 .navitems {
     display: flex;
     justify-content: space-around;
@@ -513,6 +522,7 @@ footer {
 /* Donate Page */
 .donate-main h3 {
     margin-bottom: 0.75rem;
+    font-size: 2.5rem;
 }
 .donate-main .hero {
     width: 100%;
@@ -545,7 +555,7 @@ footer {
     align-self: start;
     justify-self: center;
     color: var(--black);
-    padding-top: 8rem;
+    padding-top: 10rem;
 
 }
 .donate-main .section-1 {
@@ -558,20 +568,6 @@ footer {
     grid-area: s2;
     place-self: center;
     place-items: center;
-}
-.donate-main .image-1 {
-    grid-area: img1;
-    width:100%;
-    height:75%;
-    object-fit:cover;
-    z-index: 1;
-    place-self: center;
-}
-.donate-main .image-2 {
-    grid-area: img2;
-    width:100%;
-    height:100%;
-    object-fit:cover;
 }
 .donate-main form {
     display: grid;
@@ -862,6 +858,9 @@ footer {
     padding-bottom: 0.2rem;
     font-size: 2rem;
 }
+.festival-main h2 {
+    vertical-align: middle;
+}
 .festival-main .sidebar {
     grid-area: sb;
     overflow-y: scroll;
@@ -877,17 +876,28 @@ footer {
 }
 .festival-main .links {
     grid-area: lk;
-    align-self: center;
-    justify-self: end;
-    padding-right: 1rem;
+    display: flex;
+    justify-self:center;
+    /* background: var(--dark-beige); */
+}
+.festival-main .links h2 {
+    justify-self: center;
 }
 .festival-main .links h2 a {
     text-decoration: none;
     color: var(--black);
+    /* height: 80%; */
+    font-size: 3.75rem;
+    vertical-align: middle;
 }
 .festival-main .links h2 a:hover {
     text-decoration: underline;
     color: var(--green);
+    font-size: 3.75rem;
+}
+.festival-main h2 img {
+    height: 3rem;
+    width: 3rem;
 }
 .festival-main .sidebar h3 a {
     text-decoration: none;
@@ -912,7 +922,9 @@ footer {
 }
 .festival-main .sidebar .location .image {
     grid-area: img;
-    width: 100%
+    width: 100%;
+    height: 7rem;
+    overflow-y: hidden;
 }
 .festival-main .sidebar .location .text {
     grid-area: txt;
@@ -920,7 +932,7 @@ footer {
     padding-left: 1rem;
 }
 .festival-main .sidebar .location img {
-    height: 7rem;
+    height: auto;
 
 }
 .festival-footer {
@@ -1006,6 +1018,17 @@ footer {
     grid-area: img1;
     text-align: center;
 }
+.artist-main .section-1 a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    background-color: var(--beige);
+    color: var(--black);
+    margin-top: 2rem;
+}
+.artist-main .section-1 a:hover {
+    background-color: var(--dark-beige);
+}
 
 
 
@@ -1087,16 +1110,16 @@ footer {
 }
 .year {
     display: grid;
-    grid-template-rows: auto 35vh 35vh 35vh 35vh 35vh;
+    grid-template-rows: auto 45vh 45vh 45vh 45vh 45vh;
     grid-template-columns: repeat(12, 1fr);
     column-gap: 4rem;
     row-gap: 2rem;
     grid-template-areas:    ". yr yr yr yr yr yr yr yr yr yr ."
-                            ". img1 img1 img1 img1 img1 s1 s1 s1 s1 s1 ."
-                            ". img2 img2 img2 img2 img2 s2 s2 s2 s2 s2 ."
-                            ". img3 img3 img3 img3 img3 s3 s3 s3 s3 s3 ."
-                            ". img4 img4 img4 img4 img4 s4 s4 s4 s4 s4 ."
-                            ". img5 img5 img5 img5 img5 s5 s5 s5 s5 s5 .";
+                            ". img1 img1 img1 img1 s1 s1 s1 s1 s1 s1 ."
+                            ". img2 img2 img2 img2 s2 s2 s2 s2 s2 s2 ."
+                            ". img3 img3 img3 img3 s3 s3 s3 s3 s3 s3 ."
+                            ". img4 img4 img4 img4 s4 s4 s4 s4 s4 s4 ."
+                            ". img5 img5 img5 img5 s5 s5 s5 s5 s5 s5 .";
 }
 .eighteen, .sixteen {
     border-top: 1rem solid var(--beige);
@@ -1172,20 +1195,44 @@ footer {
 
 
 
-@media (max-width: 1040px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1023px) {
 
     /* Burger Menu */
     header {
         grid-area: hd;
         display: grid;
         grid-template-rows: 5rem auto;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas:    "hd hd bu"
-                                ". . mu";
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:    "hd hd . bu"
+                                ". . mu mu";
         overflow: visible;
         position: auto;
-        padding-left: 0;
-        padding-right: 0;
+        /* padding-left: 3rem;
+        padding-right: 3rem; */
+        padding-left: 0rem;
+        padding-right: 0rem; 
+
+    }
+    h1 a {
+        margin-left: 3rem;
     }
     .navitems {
         display: none;
@@ -1202,13 +1249,81 @@ footer {
         color: var(--black);
         grid-area: bu;
         justify-self: end;
-        padding-right: 1rem;
+        padding-right: 3rem;
+        height: 1.5em;
+        width: 1.5em;
+        
     }
     .navitems input[type="search"] {
         display: none;
     }
 
 
+    /* Homepage Modification */
+    .home-main {
+        grid-area: cn;
+        display: grid;
+        grid-template-rows: auto auto auto auto auto 0;
+        grid-template-columns: repeat(12, 1fr);
+        column-gap: 1rem;
+        row-gap: 4rem;
+        grid-template-areas:    "hr1 hd hd hd hd hd hd hd hd hd hd hr2"
+                                ". . s1 s1 s1 s1 s1 s1 s1 s1 . ."
+                                ". img1 img1 img1 img1 img1 img1 img1 img1 img1 img1 ."
+                                ". . s2 s2 s2 s2 s2 s2 s2 s2 . ."
+                                ". img2 img2 img2 img2 img2 img2 img2 img2 img2 img2 ."
+                                ". . s3 s3 s3 s3 s3 s3 s3 s3 . .";
+        /* padding-left: 3rem;
+        padding-right: 3rem; */
+    }
+    .home-main .hero {
+        height: 95vh;
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        grid-row-start: hr1;
+        grid-row-end: hr1;
+        grid-column-start: hr1;
+        grid-column-end: hr2;
+        background-image: url(../images/johns-hovering_figure.jpeg);
+        background-position: right;
+    }
+    .home-main .page-heading {
+        grid-area: hd;
+        padding-bottom: 3rem;
+        align-self: end;
+        justify-self: left;
+    }
+
+
+    /* Festival Page Modification*/
+    .festival-main {
+        grid-area: cn;
+        display: grid;
+        grid-template-rows: 5em 78vh 10vh;
+        grid-template-columns: repeat(12, 1fr);
+        column-gap: 0;
+        row-gap: 0;
+        grid-template-areas:    "t t t t t t t t t t t t"
+                                "sb sb sb sb sb sb sb mp mp mp mp mp"
+                                "sb sb sb sb sb sb sb lk lk lk lk lk";
+    }
+    .festival-main .links h2 a {
+        font-size: 2.75rem;
+    }
+    .festival-main .links h2 a:hover {
+        font-size: 2.75rem;
+    }
+
+
+    /* Donate Page Modification */
+    .donate-main h3 {
+        font-size: 2rem;
+    }
+    .donate-main h2 {
+        font-size: 3.2rem;
+    }
+    
     /* Contact Page Modification */
     .contact-main {
         grid-template-rows: 10rem auto 90vh 30vh 0;
@@ -1287,6 +1402,64 @@ footer {
         justify-self: left;
     }
 
+    /* Festival Page Modification*/
+    .festival-main {
+        grid-area: cn;
+        display: grid;
+        grid-template-rows: 5em 78vh 10vh;
+        grid-template-columns: repeat(12, 1fr);
+        column-gap: 0;
+        row-gap: 0;
+        grid-template-areas:    "t t t t t t t t t t t t"
+                                "sb sb sb sb sb sb sb sb sb sb sb sb"
+                                "lk lk lk lk lk lk lk lk lk lk lk lk";
+    }
+    .festival-main .links {
+        grid-area: lk;
+        text-decoration: underline;
+    }
+    .festival-main .links h2 a {
+        font-size: 2.75rem;
+        align-items: center;
+        color: var(--green);
+    }
+    .festival-main .links h2 img {
+        color: var(--green);
+    }
+    .festival-main .sidebar .location {
+        padding: 1rem;
+        border-top: none;
+        border-right: none;
+        align-items: center;
+        display: grid;
+        grid-template-rows: 25vh;
+        grid-template-columns: 1fr 230px 270px 1fr;
+        grid-template-areas: ". img txt .";
+    }
+    .festival-main .map {
+        background-image: none;
+        /* grid-area: mp;
+        background-position: center;
+        background-size: cover;
+        border-bottom: 0.1rem solid var(--black);
+        overflow: hidden;
+        display: hidden; */
+    }
+    .festival-main .sidebar .location .image {
+        height: 9rem;
+    }
+
+
+    /* Donate Page Modification */
+    .donate-main h3 {
+        font-size: 2rem;
+    }
+    .donate-main h2 {
+        font-size: 3.2rem;
+    }
+
+
+
     /* Footer Modification */
     footer {
         grid-area: ft;
@@ -1308,9 +1481,6 @@ footer {
 @media (max-width: 600px) {
     
     /* General Styles */
-    h2 {
-        font-size: 2.5rem;
-    }
     h3 {
         font-size: 2rem;
     }
@@ -1320,11 +1490,25 @@ footer {
     
     /* Changing Burger menu dropdown width */
     header {
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas:    "hd hd bu"
                                 "mu mu mu";
+        
+        /* padding-left: 1rem;
+        padding-right: 1rem; */
+                                
+                                
     }
-    
-    
+    header h1 a {
+        background-image: url(../images/CAB-Logo-small.png);
+        width: 11rem;
+        height: 2.7rem;
+        margin-left: 1rem;
+    }
+    .burger {
+        padding-right: 1rem;
+    }
+
     /* Home Page Modification */
     .home-main {
         grid-template-rows: auto auto auto auto auto;
@@ -1354,6 +1538,13 @@ footer {
 
 
 
+    /* Festival Page Modification*/
+    .festival-main .sidebar .location {
+        grid-template-columns: 1fr 215px 215px 1fr;
+        grid-template-areas: ". img txt .";
+    }
+
+
 
 
     /* Contact Page Modification */
@@ -1381,4 +1572,51 @@ footer {
         padding-top: 8rem;
     
     }
+}
+
+
+
+
+@media (max-width: 455px) {
+    
+    /* General Styles */
+    .home-main h2 {
+        font-size: 2.5rem;
+    }
+    .artist-main h2 {
+        font-size: 3rem;
+    }
+    .artist-main h3 {
+        font-size: 1.5rem;
+    }
+
+    /* Festival Page Modification*/
+    .festival-main .sidebar .location {
+        padding: 1rem;
+        border-top: none;
+        border-right: none;
+        align-items: center;
+        display: grid;
+        grid-template-rows: 10rem 5rem;
+        grid-template-columns: 1fr 288px 1fr;
+        grid-template-areas:    ". img ."
+                                ". txt .";
+        
+    }
+    .festival-main .sidebar .location .image {
+        height: 11rem;
+        overflow: hidden;
+    }
+    .festival-main .sidebar h3 a {
+        text-decoration: none;
+        color: var(--green);
+        font-size: 1.5rem;
+    }
+    .festival-main .sidebar h3 a:hover {
+        text-decoration: underline;
+        color: var(--green);
+        font-size: 1.5rem;
+    }
+
+    
 }
