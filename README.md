@@ -22,3 +22,7 @@ Distorts images, very annoying to deal with, wish I realised sooner. Fixed for f
  
 ## This project has taught me so much about how I WON'T set up my HTML files next time...
 Sectioning things out properly makes life so much easier, you need a pretty clear idea of how you will do you CSS while you are doing your HTML. Also whilew you are doing the inital CSS you should be thinking about how you will scale it down the whole time.
+
+
+## News Article and Artist Pages are not built quite up to standard
+I don't think they could handle pasting whatever content into them. They are a place holder at the moment, but if I were to go backk and build each artist page in, I think that some of the longer headings or oddly sized images would break the page as it curretnly is.
