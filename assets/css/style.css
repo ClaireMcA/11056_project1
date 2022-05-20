@@ -630,42 +630,31 @@ footer {
     font-size: 2rem;
 }
 .news-main .hero {
-    /* object-fit: cover; */
     width: 100%;
-    height: 30vh;
-    /* overflow: hidden; */
-    /* grid-area: hr; */
+    height: 15rem;
     background-color: var(--dark-beige);
     grid-row-start:    hr2-start;
     grid-row-end:      hr2-end;
     grid-column-start: hr1-start;
     grid-column-end:   hr2-end;
 }
-/* .donate-main .hero img{
-    width: 100%;
-    align-self: end;
-} */
 .news-main {
     grid-area: cn;
     display: grid;
-    grid-template-rows: 30vh 35vh 35vh 35vh 35vh 35vh 0;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 15rem 17rem 17rem 17rem 17rem 17rem 0;
+    grid-template-columns: 1fr 20rem 30rem 1fr;
     column-gap: 4rem;
     row-gap: 2rem;
-    grid-template-areas:    "hr1 hd hd hd hd hd hd hd hd hd hd hr2"
-                            ". . img1 img1 img1 s1 s1 s1 s1 s1 . ."
-                            ". . img2 img2 img2 s2 s2 s2 s2 s2 . ."
-                            ". . img3 img3 img3 s3 s3 s3 s3 s3 . ."
-                            ". . img4 img4 img4 s4 s4 s4 s4 s4 . ."
-                            ". . img5 img5 img5 s5 s5 s5 s5 s5 . ."
-                            ". s6 s6 s6 s6 s6 s6 s6 s6 s6 s6 .";
+    grid-template-areas:    "hr1 hd hd hr2"
+                            ". img1 s1 ."
+                            ". img2 s2 ."
+                            ". img3 s3 ."
+                            ". img4 s4 ."
+                            ". img5 s5 ."
+                            ". s6 s6 .";
 }
 .news-main .page-heading {
     grid-area: hd;
-    /* grid-row-start:    hd-start;
-    grid-row-end:      hd-end;
-    grid-column-start: hd-start;
-    grid-column-end:   hd-end; */
     z-index: 1;
     align-self: start;
     justify-self: center;
@@ -1320,6 +1309,48 @@ footer {
                                 ". img5 s5 .";
     }
 
+    /* About Page odification */
+    .about-main .section-1 h3 {
+        font-size: 2.5rem;
+    }
+    .about-main h2 {
+        font-size: 4rem;
+    }
+    /* About Page */
+    .about-main {
+        grid-area: cn;
+        display: grid;
+        grid-template-rows: 8rem auto 30rem 30rem 30rem 30rem 0;
+        grid-template-columns: 0, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 0;
+        column-gap: 1.5rem;
+        row-gap: 2rem;
+        grid-template-areas:    "hr1 hd hd hd hd hd hd hd hd hd hd hr2"
+                                "hr1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 hr2"
+                                ". s2 s2 s2 s2 s2 s2 img2 img2 img2 img2 ."
+                                ". img3 img3 img3 img3 s3 s3 s3 s3 s3 s3 ."
+                                ". s4 s4 s4 s4 s4 s4 img4 img4 img4 img4 ."
+                                ". img5 img5 img5 img5 s5 s5 s5 s5 s5 s5 ."
+                                ". s6 s6 s6 s6 s6 s6 s6 s6 s6 s6 .";
+    }
+    
+    /* News Page Moodification */
+    .news-main {
+        grid-area: cn;
+        display: grid;
+        grid-template-rows: 15rem 14rem 14rem 14rem 14rem 14rem 0;
+        grid-template-columns: 1fr 17rem 20rem 1fr;
+        column-gap: 2rem;
+        row-gap: 2rem;
+        grid-template-areas:    "hr1 hd hd hr2"
+                                ". img1 s1 ."
+                                ". img2 s2 ."
+                                ". img3 s3 ."
+                                ". img4 s4 ."
+                                ". img5 s5 ."
+                                ". s6 s6 .";
+    }
+
+
     /* Contact Page Modification */
     .contact-main {
         grid-template-rows: 10rem auto 90vh 30vh 0;
@@ -1485,6 +1516,59 @@ footer {
     }
 
 
+    /* About Page Modification */
+    .about-main .section-1 h3 {
+        font-size: 2rem;
+    }
+    .about-main h2 {
+        font-size: 3.25rem;
+    }
+    .about-main .section h3 {
+        padding-bottom: 0;
+        font-size: 2.5rem;
+    }
+    .about-main {
+        grid-area: cn;
+        display: grid;
+        grid-template-rows: 8rem auto 20rem 20rem 20rem 20rem 0;
+        grid-template-columns: 0, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 0;
+        column-gap: 1.5rem;
+        row-gap: 2rem;
+        grid-template-areas:    "hr1 hd hd hd hd hd hd hd hd hd hd hr2"
+                                "hr1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 hr2"
+                                ". s2 s2 s2 s2 s2 s2 img2 img2 img2 img2 ."
+                                ". img3 img3 img3 img3 s3 s3 s3 s3 s3 s3 ."
+                                ". s4 s4 s4 s4 s4 s4 img4 img4 img4 img4 ."
+                                ". img5 img5 img5 img5 s5 s5 s5 s5 s5 s5 ."
+                                ". s6 s6 s6 s6 s6 s6 s6 s6 s6 s6 .";
+    }
+    .about-main h3 + p + p {
+        display: none;
+    }
+
+
+
+    /* News Page Moodification */
+    .news-main {
+        grid-area: cn;
+        display: grid;
+        grid-template-rows: 15rem 12rem 12rem 12rem 12rem 12rem 0;
+        grid-template-columns: 1fr 14rem 17rem 1fr;
+        column-gap: 2rem;
+        row-gap: 2rem;
+        grid-template-areas:    "hr1 hd hd hr2"
+                                ". img1 s1 ."
+                                ". img2 s2 ."
+                                ". img3 s3 ."
+                                ". img4 s4 ."
+                                ". img5 s5 ."
+                                ". s6 s6 .";
+    }
+    .news-main h3 {
+        font-size: 1.5rem;
+    }
+
+
     /* Footer Modification */
     footer {
         grid-area: ft;
@@ -1621,6 +1705,92 @@ footer {
     }
 
 
+
+    /* About Page Modification */
+    .about-main .hero {
+        height: 15rem;
+    }
+    .about-main .page-heading {
+        padding-top: 7rem;
+    }
+    .about-main .section-1 h3 {
+        font-size: 1.5rem;
+    }
+    .about-main h2 {
+        font-size: 1.8rem;
+    }
+    .about-main {
+        grid-area: cn;
+        display: grid;
+        grid-template-rows: 7rem auto 15rem 17rem 15rem 17rem 15rem 17rem 15rem 17rem 0;
+        grid-template-columns: repeat(12, 1fr);
+        column-gap: 0.5rem;
+        row-gap: 1rem;
+        grid-template-areas:    "hr1 hd hd hd hd hd hd hd hd hd hd hr2"
+                                "hr1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 hr2"
+                                ". img2 img2 img2 img2 img2 img2 img2 img2 img2 img2 ."
+                                ". s2 s2 s2 s2 s2 s2 s2 s2 s2 s2 ."
+                                ". img3 img3 img3 img3 img3 img3 img3 img3 img3 img3 ."
+                                ". s3 s3 s3 s3 s3 s3 s3 s3 s3 s3 ."
+                                ". img4 img4 img4 img4 img4 img4 img4 img4 img4 img4 ."
+                                ". s4 s4 s4 s4 s4 s4 s4 s4 s4 s4 ."
+                                ". img5 img5 img5 img5 img5 img5 img5 img5 img5 img5 ."
+                                ". s5 s5 s5 s5 s5 s5 s5 s5 s5 s5 ."
+                                ". s6 s6 s6 s6 s6 s6 s6 s6 s6 s6 .";
+    }
+    .about-main .image {
+        height: 100%;
+        width: 15rem;
+    }
+    .about-main .section {
+        align-self: flex-start;
+    }
+    .about-main .section h3 {
+        padding-bottom: 0;
+        text-align: center;
+    }
+    .about-main .section-1 p {
+        display: none;
+    }
+    .about-main .section-1 {
+        align-self: end;
+    }
+
+
+    /* News Page Moodification */
+    .news-main {
+        grid-area: cn;
+        display: grid;
+        grid-template-rows: 15rem 12rem 12rem 12rem 12rem 12rem 0;
+        grid-template-columns: 1fr 14rem 1fr;
+        column-gap: 2rem;
+        row-gap: 2rem;
+        grid-template-areas:    "hr1 hd hr2"                        
+                                ". img1 ."
+                                ". s1 ."    
+                                ". img2 ."
+                                ". s2 ."                                
+                                ". img3 ."
+                                ". s3 ."    
+                                ". img4 ."
+                                ". s4 ."    
+                                ". img5 ."
+                                ". s5 ."                                
+                                ". s6 .";
+    }
+    .news-main h3 {
+        font-size: 1.5rem;
+    }
+    .news-main h2 {
+        font-size: 3rem;
+    }
+    .news-main .hero {
+        height: 12rem;
+    }
+
+
+
+
     /* Contact Page Modification */
     .contact-main {
         grid-template-rows: 10rem auto 90vh 30vh 0;
@@ -1691,6 +1861,5 @@ footer {
         color: var(--green);
         font-size: 1.5rem;
     }
-
     
 }

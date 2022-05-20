@@ -12,5 +12,13 @@ It is important to have a clear and easy to navigate IA for any website, but the
 
 ## I wish CSS could be organised better, I have done a bad job of that
 
+I got better at wrapping my head around media queries with each new page. I three main page widths with a few extra ones for more complicated pages like 'festivales' which had a map display with a scrolling list down the side.
+
+
+## Using flexible images verses flexible columns
+Distorts images, very annoying to deal with, wish I realised sooner. Fixed for festival but not any other pages.
+
 
  
+## This project has taught me so much about how I WON'T set up my HTML files next time...
+Sectioning things out properly makes life so much easier, you need a pretty clear idea of how you will do you CSS while you are doing your HTML. Also whilew you are doing the inital CSS you should be thinking about how you will scale it down the whole time.
