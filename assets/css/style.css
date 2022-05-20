@@ -269,21 +269,14 @@ footer {
     margin-bottom: 0.75rem;
 }
 .contact-main .hero {
-    /* object-fit: cover; */
     width: 100%;
     height: 95vh;
-    /* overflow: hidden; */
-    /* grid-area: hr; */
     background-color: var(--dark-beige);
     grid-row-start:    hr2-start;
     grid-row-end:      hr2-end;
     grid-column-start: hr1-start;
     grid-column-end:   hr2-end;
 }
-/* .donate-main .hero img{
-    width: 100%;
-    align-self: end;
-} */
 .contact-main {   
     grid-area: cn;
     display: grid;
@@ -294,15 +287,9 @@ footer {
     grid-template-areas:    "hr1 hd hd hd hd hd hd hd hd hd hd hr2"
                             "hr1 . . s1 s1 s1 s1 s1 s1 . . hr2"
                             ". s2 s2 s2 s2 s2 s2 s2 s2 s2 s2 .";
-                            /* ". s3 s3 s3 s3 s3 s3 s3 s3 s3 s3 ." */
-                            /* "s4 s4 s4 s4 s4 s4 s4 s4 s4 s4 s4 s4"; */
 }
 .contact-main .page-heading {
     grid-area: hd;
-    /* grid-row-start:    hd-start;
-    grid-row-end:      hd-end;
-    grid-column-start: hd-start;
-    grid-column-end:   hd-end; */
     z-index: 1;
     align-self: start;
     justify-self: center;
@@ -369,11 +356,9 @@ footer {
     padding: 0.5rem 1rem;
     margin-bottom: 0.65rem;
     margin-top: 0;
-    /* display: inline-block; */
     border: 1px solid var(--grey);
     border-radius: 4px;
     box-sizing: border-box;
-    /* place-self: center; */
     height: 2.5rem;
 }
 .contact-main textarea {
@@ -411,42 +396,31 @@ footer {
 
 /* About Page */
 .about-main .hero {
-    /* object-fit: cover; */
     width: 100%;
-    height: 65vh;
-    /* overflow: hidden; */
-    /* grid-area: hr; */
+    height: 30rem;
     background-color: var(--dark-beige);
     grid-row-start:    hr2-start;
     grid-row-end:      hr2-end;
     grid-column-start: hr1-start;
     grid-column-end:   hr2-end;
 }
-/* .donate-main .hero img{
-    width: 100%;
-    align-self: end;
-} */
 .about-main {
     grid-area: cn;
     display: grid;
-    grid-template-rows: 10rem auto 90vh 90vh 90vh 90vh 0;
+    grid-template-rows: 8rem auto 30rem 30rem 30rem 30rem 0;
     grid-template-columns: repeat(12, 1fr);
     column-gap: 4rem;
     row-gap: 2rem;
     grid-template-areas:    "hr1 hd hd hd hd hd hd hd hd hd hd hr2"
                             "hr1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 hr2"
-                            ". . s2 s2 s2 s2 img2 img2 img2 img2 . ."
-                            ". . img3 img3 img3 img3 s3 s3 s3 s3 . ."
-                            ". . s4 s4 s4 s4 img4 img4 img4 img4 . ."
-                            ". . img5 img5 img5 img5 s5 s5 s5 s5 . ."
+                            ". s2 s2 s2 s2 s2 s2 img2 img2 img2 img2 ."
+                            ". img3 img3 img3 img3 s3 s3 s3 s3 s3 s3 ."
+                            ". s4 s4 s4 s4 s4 s4 img4 img4 img4 img4 ."
+                            ". img5 img5 img5 img5 s5 s5 s5 s5 s5 s5 ."
                             ". s6 s6 s6 s6 s6 s6 s6 s6 s6 s6 .";
 }
 .about-main .page-heading {
     grid-area: hd;
-    /* grid-row-start:    hd-start;
-    grid-row-end:      hd-end;
-    grid-column-start: hd-start;
-    grid-column-end:   hd-end; */
     z-index: 1;
     align-self: start;
     justify-self: center;
@@ -524,11 +498,13 @@ footer {
 /* Donate Page */
 .donate-main h3 {
     margin-bottom: 0.75rem;
-    font-size: 2.5rem;
+    margin-top: 0.75rem;
+    font-size: 2.25rem;
+    padding-top: 1rem;
 }
 .donate-main .hero {
     width: 100%;
-    height: 65vh;
+    height: 25rem;
     background-color: var(--dark-beige);
     grid-row-start:    hr2-start;
     grid-row-end:      hr2-end;
@@ -538,7 +514,7 @@ footer {
 .donate-main {
     grid-area: cn;
     display: grid;
-    grid-template-rows: 10rem auto 90vh 0;
+    grid-template-rows: 8rem auto auto 0;
     grid-template-columns: repeat(12, 1fr);
     column-gap: 4rem;
     row-gap: 2rem;
@@ -557,7 +533,7 @@ footer {
     align-self: start;
     justify-self: center;
     color: var(--black);
-    padding-top: 10rem;
+    padding-top: 8rem;
 
 }
 .donate-main .section-1 {
@@ -570,6 +546,8 @@ footer {
     grid-area: s2;
     place-self: center;
     place-items: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 .donate-main form {
     display: grid;
@@ -610,11 +588,9 @@ footer {
     padding: 0.5rem 1rem;
     margin-bottom: 0.65rem;
     margin-top: 0;
-    /* display: inline-block; */
     border: 1px solid var(--grey);
     border-radius: 4px;
     box-sizing: border-box;
-    /* place-self: center; */
     height: 2.5rem;
 }
 .donate-main input[type=textarea] {
@@ -1319,6 +1295,9 @@ footer {
 
 
     /* Donate Page Modification */
+    .donate-main {
+        column-gap: 2rem;
+    }
     .donate-main h3 {
         font-size: 2rem;
     }
@@ -1326,6 +1305,21 @@ footer {
         font-size: 3.2rem;
     }
     
+    /* Festival Archive Page Modification */
+    .year {
+        display: grid;
+        grid-template-rows: auto 35vh 35vh 35vh 35vh 35vh;
+        grid-template-columns: 1fr 275px 440px 1fr;
+        column-gap: 2rem;
+        row-gap: 2rem;
+        grid-template-areas:    ". yr yr ."
+                                ". img1 s1 ."
+                                ". img2 s2 ."
+                                ". img3 s3 ."
+                                ". img4 s4 ."
+                                ". img5 s5 .";
+    }
+
     /* Contact Page Modification */
     .contact-main {
         grid-template-rows: 10rem auto 90vh 30vh 0;
@@ -1451,15 +1445,44 @@ footer {
         height: 9rem;
     }
 
+    /* Festival Archive Page Modification */
+    .year {
+        display: grid;
+        grid-template-rows: auto 25vh 25vh 25vh 25vh 25vh;
+        grid-template-columns: 1fr 200px 300px 1fr;
+        column-gap: 2rem;
+        row-gap: 2rem;
+        grid-template-areas:    ". yr yr ."
+                                ". img1 s1 ."
+                                ". img2 s2 ."
+                                ". img3 s3 ."
+                                ". img4 s4 ."
+                                ". img5 s5 .";
+    }
+    .archive-main h3 a {
+        font-size: 2.5rem;
+    }
+    .archive-main .subtitle {
+        display: none;
+    }
+
 
     /* Donate Page Modification */
-    .donate-main h3 {
-        font-size: 2rem;
+    .donate-main {
+        grid-template-rows: 7rem auto auto 0;
+        grid-template-columns: repeat(12, 1fr);
+        column-gap: 1rem;
+    }
+    .donate-main .page-heading {
+        padding-top: 7rem;
+    }
+    .donate-main .section-1 h3 {
+        font-size: 1.5rem;
     }
     .donate-main h2 {
-        font-size: 3.2rem;
+        font-size: 2.25rem;
+        text-align: center;
     }
-
 
 
     /* Footer Modification */
@@ -1547,6 +1570,55 @@ footer {
     }
 
 
+
+    /* Donate Page Modification */
+    .donate-main {
+        grid-template-rows: 6rem auto auto 0;
+        grid-template-columns: repeat(12, 1fr);
+        column-gap: 1rem;
+    }
+    .donate-main .hero {
+        height: 15rem;
+    }
+    .donate-main .page-heading {
+        padding-top: 6rem;
+    }
+    .donate-main h3 {
+        font-size: 1.5rem;
+    }
+    .donate-main .section-1 h3 {
+        font-size: 1rem;
+    }
+    .donate-main h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .donate-main .section-1 p {
+        display: none;
+    }
+    .donate-main .section-1 {
+        align-self: end;
+    }
+    .donate-main .section-2 {
+        padding-top: 0;
+        padding-bottom: 1rem;
+    }
+    .donate-main input[type=text], 
+    .donate-main input[type=email],
+    .donate-main input[type=textarea],
+    .donate-main input[type=number],
+    .donate-main input[type=submit],
+    .donate-main select {
+        width: 17rem;
+        max-width: 720px;
+        padding: 0.5rem 1rem;
+        margin-bottom: 0.65rem;
+        margin-top: 0;
+        border: 1px solid var(--grey);
+        border-radius: 4px;
+        box-sizing: border-box;
+        height: 2.5rem;
+    }
 
 
     /* Contact Page Modification */

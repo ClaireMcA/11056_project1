@@ -7,5 +7,10 @@ When we were first given the site to redesign, I began by working my way through
 It is important to have a clear and easy to navigate IA for any website, but the 
 
 
-## 
+## Site is kinda ugly but happy woth funcitonality
+
+
+## I wish CSS could be organised better, I have done a bad job of that
+
+
  
